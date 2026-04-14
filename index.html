@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 RICH Summer Camp Journeys</title>
-    <meta name="description" content="Explore the 2026 RICH Summer Camp itineraries. Immersive cultural journeys for overseas youth.">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <title>2026 RICH Chinese Summer Camp in China | PKU & ECNU Academic Excellence</title>
+    <meta name="description" content="The premier Chinese summer camp in China since 2009. Academic immersion at Peking University (PKU) and ECNU. Students earn an official PKU learning certificate.">
+    <meta name="keywords" content="Chinese summer camp, summer camp in China, Peking University Summer Camp, ECNU, learn Chinese in China, PKU certificate summer program">
+    
+    <link rel="canonical" href="https://2026.richcamps.com/" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "RICH Chinese Education",
+      "url": "https://www.richcamps.com",
+      "description": "Premium 2026 Chinese summer camp in China featuring academic immersion at Peking University and East China Normal University.",
+      "award": "Official Peking University Learning Certificate",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "2026 Summer Camp Sessions",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beijing & Chengdu Session" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Shanghai & Beijing Classic Session" } }
+        ]
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --primary-navy: #1A2E44;
+            --accent-crimson: #8C2131;
+            --bg-page: #FDFBF7;
+            --text-dark: #1F2937;
+            --text-muted: #828A95;
+            --border-light: #E5E7EB;
+        }
+
         body {
-            background-color: #FDFBF7;
-            color: #1A2E44;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
             font-family: 'Montserrat', sans-serif;
             display: flex;
             flex-direction: column;
@@ -17,59 +53,112 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            -webkit-font-smoothing: antialiased;
         }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* H1 植入核心大词 */
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 42px;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+            font-size: 46px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: var(--primary-navy);
+            letter-spacing: 1px;
+            line-height: 1.1;
         }
-        p {
-            font-weight: 300;
-            color: #828A95;
-            margin-bottom: 50px;
+
+        .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            font-style: italic;
+            color: var(--accent-crimson);
+            margin-bottom: 30px;
             letter-spacing: 1px;
         }
+
+        /* 权威背书文案：冷静、专业 */
+        .academic-highlight {
+            font-weight: 300;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            letter-spacing: 0.5px;
+            line-height: 1.8;
+            font-size: 14px;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+            padding: 25px 0;
+        }
+
+        .academic-highlight span {
+            color: var(--primary-navy);
+            font-weight: 500;
+        }
+
         .nav-links {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            width: 100%;
-            max-width: 400px;
+            gap: 16px;
         }
+
+        /* 链接按钮：保持“老钱风”质感 */
         a {
             text-decoration: none;
-            color: #1A2E44;
-            padding: 15px 20px;
-            border: 1px solid #E5E7EB;
-            border-radius: 4px;
-            transition: all 0.3s ease;
+            color: var(--primary-navy);
+            padding: 18px 24px;
+            border: 1px solid var(--border-light);
+            border-radius: 2px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
             font-weight: 500;
-            letter-spacing: 1px;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
             background: white;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
+
         a:hover {
-            border-color: #8C2131;
-            color: #8C2131;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+            border-color: var(--accent-crimson);
+            color: var(--accent-crimson);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+        }
+
+        .footer-logo {
+            margin-top: 60px;
+            opacity: 0.6;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            letter-spacing: 4px;
+            color: var(--primary-navy);
         }
     </style>
 </head>
 <body>
 
-    <h1>2026 Summer Journeys</h1>
-    <p>Select a session to view the full itinerary.</p>
+    <div class="container">
+        <h1>2026 RICH Chinese Summer Camp in China</h1>
+        <div class="subtitle">Academic Immersion & Cultural Awakening</div>
 
-    <div class="nav-links">
-        <a href="beijing-s1.html">Session I: Beijing & Chengdu</a>
-        <a href="beijing-s2.html">Session II: Beijing & Xi'an</a>
-        <a href="beijing-s3.html">Session III: Beijing & Shaolin</a>
-        <a href="shanghai-s1.html">Session IV: Shanghai Classic</a>
-        <a href="shanghai-s2.html">Session V: Shanghai Cyber</a>
+        <div class="academic-highlight">
+            Experience the pinnacle of Chinese academia with our curated journeys. All sessions feature deep immersion at <span>Peking University</span> or <span>East China Normal University</span>. Upon successful completion, students will be awarded an <span>official learning certificate from Peking University</span>, a testament to their dedication and academic growth.
+        </div>
+
+        <div class="nav-links">
+            <a href="beijing-s1.html">Session I: Beijing & Chengdu</a>
+            <a href="beijing-s2.html">Session II: Beijing & Xi'an</a>
+            <a href="beijing-s3.html">Session III: Beijing & Shaolin</a>
+            <a href="shanghai-s1.html">Session IV: Shanghai Classic</a>
+            <a href="shanghai-s2.html">Session V: Shanghai Cyber</a>
+        </div>
+
+        <div class="footer-logo">RICH CAMPS</div>
     </div>
 
 </body>
