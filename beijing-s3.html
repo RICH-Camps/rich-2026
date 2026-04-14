@@ -308,7 +308,64 @@
 
         .footer-website:hover { color: var(--accent-crimson); }
         .footer-website:hover::after { transform: scaleX(1); }
-
+        /* =========================================
+           📱 移动端响应式适配 (Mobile Responsive)
+           ========================================= */
+        @media (max-width: 768px) {
+            body {
+                padding: 0; /* 移除手机端的多余灰色背景 */
+            }
+            .page {
+                margin: 0;
+                box-shadow: none; /* 移除阴影，让页面完全贴合手机屏幕 */
+            }
+            .brochure-header {
+                padding: 40px 20px; /* 缩小头部边距 */
+            }
+            .header-title-en {
+                font-size: 28px; /* 适配手机屏幕的主标题大小 */
+            }
+            .header-location-en {
+                font-size: 22px;
+            }
+            .content-wrap {
+                padding: 30px 20px; /* 核心修复：大幅释放左右留白，还给文字空间 */
+            }
+            .day-header {
+                align-items: flex-start;
+            }
+            .date-box {
+                margin-right: 15px;
+                min-width: 65px;
+                padding: 8px 10px;
+            }
+            .date-num {
+                font-size: 26px;
+            }
+            .day-title-en {
+                font-size: 20px;
+            }
+            
+            /* 核心修复：将“左右并排”切换为“上下折叠” */
+            .schedule-row {
+                flex-direction: column; 
+                padding: 16px 0;
+            }
+            .time-col {
+                width: 100%;
+                padding-top: 0;
+                margin-bottom: 8px;
+                font-size: 14px;
+                border-bottom: 1px dashed var(--border-light); /* 用一条优雅的细虚线分隔时间和内容 */
+                padding-bottom: 6px;
+            }
+            .text-col {
+                padding-left: 0;
+            }
+            .seo-internal-links {
+                padding: 20px 20px 40px 20px !important;
+            }
+        }
         @media print {
             body { background: none; padding: 0; }
             .page { box-shadow: none; max-width: 100%; margin-bottom: 0; }
