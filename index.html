@@ -63,7 +63,6 @@
             width: 100%;
         }
 
-        /* H1 植入核心大词 */
         h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 46px;
@@ -83,7 +82,6 @@
             letter-spacing: 1px;
         }
 
-        /* 权威背书文案：冷静、专业 */
         .academic-highlight {
             font-weight: 300;
             color: var(--text-muted);
@@ -107,7 +105,6 @@
             gap: 16px;
         }
 
-        /* 链接按钮：保持“老钱风”质感 */
         a {
             text-decoration: none;
             color: var(--primary-navy);
@@ -137,6 +134,28 @@
             font-size: 18px;
             letter-spacing: 4px;
             color: var(--primary-navy);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .academic-highlight {
+                font-size: 13px;
+                margin-bottom: 30px;
+                padding: 20px 0;
+            }
+            a {
+                padding: 15px 20px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
