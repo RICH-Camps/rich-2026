@@ -6,7 +6,7 @@
     
     <title>2026 RICH Summer Camp in China | Beijing & Chengdu 16-Day Journey</title>
     
-    <meta name="description" content="Join the ultimate 2026 summer camp in China! A premium 16-day Chinese summer camp blending Beijing's imperial aesthetics with Chengdu's Sanxingdui.">
+    <meta name="description" content="Join the ultimate 2026 summer camp in China. A premium 16-day Chinese summer camp blending Beijing's imperial aesthetics with Chengdu's Sanxingdui.">
     
     <meta name="keywords" content="Summer camp in China, Chinese summer camp, Summer Camp China 2026, Overseas Chinese Youth, Beijing Summer Camp, Sanxingdui Tour, Learn Chinese">
     
@@ -256,7 +256,7 @@
         .en-text {
             font-family: var(--font-sans-en);
             font-size: 14.5px; 
-            font-weight: 500;
+            font-weight: 400; /* 去除了加粗，保持高级排版 */
             color: var(--text-dark);
             line-height: 1.6;
             margin-bottom: 6px;
@@ -265,14 +265,14 @@
         .zh-text {
             font-family: var(--font-sans-zh);
             font-size: 12px;
-            font-weight: 300;
+            font-weight: 300; /* 去除了加粗，保持高级排版 */
             color: var(--text-muted);
             line-height: 1.5;
         }
         
         .highlight-text-en {
             color: var(--accent-crimson);
-            font-weight: 600;
+            font-weight: 500; /* 仅用颜色和微重突出，避免刺眼 */
         }
 
         .brochure-footer {
@@ -309,6 +309,64 @@
         .footer-website:hover { color: var(--accent-crimson); }
         .footer-website:hover::after { transform: scaleX(1); }
 
+        /* =========================================
+           📱 移动端响应式适配 (Mobile Responsive)
+           ========================================= */
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+            .brochure-header {
+                padding: 40px 20px;
+            }
+            .header-title-en {
+                font-size: 28px;
+            }
+            .header-location-en {
+                font-size: 22px;
+            }
+            .content-wrap {
+                padding: 30px 20px;
+            }
+            .day-header {
+                align-items: flex-start;
+            }
+            .date-box {
+                margin-right: 15px;
+                min-width: 65px;
+                padding: 8px 10px;
+            }
+            .date-num {
+                font-size: 26px;
+            }
+            .day-title-en {
+                font-size: 20px;
+            }
+            
+            .schedule-row {
+                flex-direction: column; 
+                padding: 16px 0;
+            }
+            .time-col {
+                width: 100%;
+                padding-top: 0;
+                margin-bottom: 8px;
+                font-size: 14px;
+                border-bottom: 1px dashed var(--border-light);
+                padding-bottom: 6px;
+            }
+            .text-col {
+                padding-left: 0;
+            }
+            .seo-internal-links {
+                padding: 20px 20px 40px 20px !important;
+            }
+        }
+
         @media print {
             body { background: none; padding: 0; }
             .page { box-shadow: none; max-width: 100%; margin-bottom: 0; }
@@ -344,22 +402,22 @@
                     <div class="schedule-row">
                         <div class="time-col">All Day</div>
                         <div class="text-col">
-                            <div class="en-text">Whole day airport transfer; Camp check in</div>
-                            <div class="zh-text">全天接机，营地报道</div>
+                            <div class="en-text">Whole day airport transfer; Camp check in.</div>
+                            <div class="zh-text">全天接机，营地报道。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">18:30 - 20:00</div>
                         <div class="text-col">
-                            <div class="en-text">Orientation; welcome dinner; group assignment, ice-breaking games</div>
-                            <div class="zh-text">欢迎晚宴，分组与破冰游戏</div>
+                            <div class="en-text">Orientation; welcome dinner; group assignment, ice-breaking games.</div>
+                            <div class="zh-text">欢迎晚宴，分组与破冰游戏。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">21:30</div>
                         <div class="text-col">
                             <div class="en-text">Lights out & Bedtime. Time to recharge and settle into a healthy camp routine.</div>
-                            <div class="zh-text">营地熄灯就寝（建立健康的睡眠作息，确保孩子们得到充分的休息）</div>
+                            <div class="zh-text">营地熄灯就寝（建立健康的睡眠作息，确保孩子们得到充分的休息）。</div>
                         </div>
                     </div>
                 </div>
@@ -381,43 +439,43 @@
                     <div class="schedule-row">
                         <div class="time-col">08:30 - 09:15</div>
                         <div class="text-col">
-                            <div class="en-text">Morning wake-up & Healthy camp breakfast</div>
-                            <div class="zh-text">晨起洗漱，享用健康营地早餐</div>
+                            <div class="en-text">Morning wake-up & Healthy camp breakfast.</div>
+                            <div class="zh-text">晨起洗漱，享用健康营地早餐。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">09:30 - 12:30</div>
                         <div class="text-col">
-                            <div class="en-text">Level assessment & Chinese language course</div>
-                            <div class="zh-text">中文水平测试与分班 · 中文课程</div>
+                            <div class="en-text">Level assessment & Chinese language course.</div>
+                            <div class="zh-text">中文水平测试与分班 · 中文课程。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">12:30 - 13:30</div>
                         <div class="text-col">
-                            <div class="en-text">Lunch break & Mid-day rest</div>
-                            <div class="zh-text">营地午餐与午间休整</div>
+                            <div class="en-text">Lunch break & Mid-day rest.</div>
+                            <div class="zh-text">营地午餐与午间休整。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">14:00 - 17:00</div>
                         <div class="text-col">
-                            <div class="en-text"><span style="font-weight: 600; color: var(--primary-navy);">Imperial Aesthetic Awakening:</span> Shake off the jet lag with a relaxing royal boat cruise on Kunming Lake. Hike up Longevity Hill with your new friends and decode the ancient "Fengshui" philosophy behind this world-class imperial garden.</div>
-                            <div class="zh-text"><span style="font-weight: 500;">皇家美学启蒙：</span>在昆明湖的皇家游船上褪去时差的疲惫。与新朋友一同登顶万寿山，在轻松的氛围中解码这座世界级皇家园林背后的“风水”哲学。</div>
+                            <div class="en-text"><span style="color: var(--primary-navy);">Imperial Aesthetic Awakening:</span> Shake off the jet lag with a relaxing royal boat cruise on Kunming Lake. Hike up Longevity Hill with your new friends and decode the ancient "Fengshui" philosophy behind this world-class imperial garden.</div>
+                            <div class="zh-text">皇家美学启蒙：在昆明湖的皇家游船上褪去时差的疲惫。与新朋友一同登顶万寿山，在轻松的氛围中解码这座世界级皇家园林背后的“风水”哲学。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">18:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text">Dinner, 1v1 Chinese tutoring & homework time</div>
-                            <div class="zh-text">晚餐，1对1中文辅导及完成作业</div>
+                            <div class="en-text">Dinner, 1v1 Chinese tutoring & homework time.</div>
+                            <div class="zh-text">晚餐，1对1中文辅导及完成作业。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">21:30</div>
                         <div class="text-col">
                             <div class="en-text">Lights out & Bedtime. Time to recharge and settle into a healthy camp routine.</div>
-                            <div class="zh-text">营地熄灯就寝（建立健康的睡眠作息，确保孩子们得到充分的休息）</div>
+                            <div class="zh-text">营地熄灯就寝（建立健康的睡眠作息，确保孩子们得到充分的休息）。</div>
                         </div>
                     </div>
                 </div>
@@ -439,8 +497,8 @@
                     <div class="schedule-row">
                         <div class="time-col">09:30 - 12:30</div>
                         <div class="text-col">
-                            <div class="en-text">Chinese language course</div>
-                            <div class="zh-text">中文课程</div>
+                            <div class="en-text">Chinese language course.</div>
+                            <div class="zh-text">中文课程。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -453,15 +511,15 @@
                     <div class="schedule-row">
                         <div class="time-col">17:30 - 18:30</div>
                         <div class="text-col">
-                            <div class="en-text highlight-text-en">Traditional Beijing Roasted Duck for dinner</div>
-                            <div class="zh-text">特色晚餐：品尝正宗北京烤鸭</div>
+                            <div class="en-text highlight-text-en">Traditional Beijing Roasted Duck for dinner.</div>
+                            <div class="zh-text">特色晚餐：品尝正宗北京烤鸭。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">19:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text">1v1 Chinese tutoring & homework time</div>
-                            <div class="zh-text">1对1中文辅导及完成作业</div>
+                            <div class="en-text">1v1 Chinese tutoring & homework time.</div>
+                            <div class="zh-text">1对1中文辅导及完成作业。</div>
                         </div>
                     </div>
                 </div>
@@ -483,8 +541,8 @@
                     <div class="schedule-row">
                         <div class="time-col">09:30 - 12:30</div>
                         <div class="text-col">
-                            <div class="en-text">Chinese language course</div>
-                            <div class="zh-text">中文课程</div>
+                            <div class="en-text">Chinese language course.</div>
+                            <div class="zh-text">中文课程。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -497,8 +555,8 @@
                     <div class="schedule-row">
                         <div class="time-col">17:00 - 18:30</div>
                         <div class="text-col">
-                            <div class="en-text">Learn to make dumplings and enjoy a dumpling dinner</div>
-                            <div class="zh-text">学习包饺子，品尝纯正手工饺子晚餐</div>
+                            <div class="en-text">Learn to make dumplings and enjoy a dumpling dinner.</div>
+                            <div class="zh-text">学习包饺子，品尝纯正手工饺子晚餐。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -566,8 +624,8 @@
                     <div class="schedule-row">
                         <div class="time-col">18:00 - 19:00</div>
                         <div class="text-col">
-                            <div class="en-text">Dinner at Haidilao Hotpot</div>
-                            <div class="zh-text">特色晚餐：海底捞火锅</div>
+                            <div class="en-text">Dinner at Haidilao Hotpot.</div>
+                            <div class="zh-text">特色晚餐：海底捞火锅。</div>
                         </div>
                     </div>
                 </div>
@@ -589,8 +647,8 @@
                     <div class="schedule-row">
                         <div class="time-col">09:30 - 12:30</div>
                         <div class="text-col">
-                            <div class="en-text">Chinese language course</div>
-                            <div class="zh-text">中文课程</div>
+                            <div class="en-text">Chinese language course.</div>
+                            <div class="zh-text">中文课程。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -610,8 +668,8 @@
                     <div class="schedule-row">
                         <div class="time-col">18:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text">Dinner, 1v1 Chinese tutoring & homework time</div>
-                            <div class="zh-text">晚餐，1对1中文辅导及完成作业</div>
+                            <div class="en-text">Dinner, 1v1 Chinese tutoring & homework time.</div>
+                            <div class="zh-text">晚餐，1对1中文辅导及完成作业。</div>
                         </div>
                     </div>
                 </div>
@@ -640,15 +698,15 @@
                     <div class="schedule-row">
                         <div class="time-col">16:00 - 18:00</div>
                         <div class="text-col">
-                            <div class="en-text">Back to the hotel, refresh and relax</div>
-                            <div class="zh-text">返回酒店冲凉休息</div>
+                            <div class="en-text">Back to the hotel, refresh and relax.</div>
+                            <div class="zh-text">返回酒店冲凉休息。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">18:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text">Dinner, 1v1 Chinese tutoring & Early Rest (Recovery after the hike)</div>
-                            <div class="zh-text">晚餐，1对1中文辅导及早早休息（为长城远足后恢复体力）</div>
+                            <div class="en-text">Dinner, 1v1 Chinese tutoring & Early Rest (Recovery after the hike).</div>
+                            <div class="zh-text">晚餐，1对1中文辅导及早早休息（为长城远足后恢复体力）。</div>
                         </div>
                     </div>
                 </div>
@@ -670,8 +728,8 @@
                     <div class="schedule-row">
                         <div class="time-col">09:30 - 12:30</div>
                         <div class="text-col">
-                            <div class="en-text">Chinese language course</div>
-                            <div class="zh-text">中文课程</div>
+                            <div class="en-text">Chinese language course.</div>
+                            <div class="zh-text">中文课程。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -684,8 +742,8 @@
                     <div class="schedule-row">
                         <div class="time-col">17:00 - 20:00</div>
                         <div class="text-col">
-                            <div class="en-text">Dinner & Watch the Flying Acrobatics Show</div>
-                            <div class="zh-text">晚餐，观看朝阳剧场杂技表演</div>
+                            <div class="en-text">Dinner & Watch the Flying Acrobatics Show.</div>
+                            <div class="zh-text">晚餐，观看朝阳剧场杂技表演。</div>
                         </div>
                     </div>
                 </div>
@@ -715,7 +773,7 @@
                         <div class="time-col">12:30 - 14:00</div>
                         <div class="text-col">
                             <div class="en-text">Lunch & Exchange: Dine with PKU students and engage in insightful discussions.</div>
-                            <div class="zh-text">与北大学生共进午餐，深入交流，感受学术氛围</div>
+                            <div class="zh-text">与北大学生共进午餐，深入交流，感受学术氛围。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -728,8 +786,8 @@
                     <div class="schedule-row">
                         <div class="time-col">19:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text">1v1 Chinese tutoring & homework time</div>
-                            <div class="zh-text">1对1中文辅导及完成作业</div>
+                            <div class="en-text">1v1 Chinese tutoring & homework time.</div>
+                            <div class="zh-text">1对1中文辅导及完成作业。</div>
                         </div>
                     </div>
                 </div>
@@ -753,15 +811,15 @@
                     <div class="schedule-row">
                         <div class="time-col">13:30 - 17:00</div>
                         <div class="text-col">
-                            <div class="en-text">Final exam & Closing ceremony</div>
-                            <div class="zh-text">结业考试和结业典礼</div>
+                            <div class="en-text">Final exam & Closing ceremony.</div>
+                            <div class="zh-text">结业考试和结业典礼。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">20:46 (Departs)</div>
                         <div class="text-col">
-                            <div class="en-text">Take train D997 Beijing-Chengdu (Soft-sleeper train ticket in 4-bed cabin)</div>
-                            <div class="zh-text">北京丰台站候车，乘坐动卧前往成都（四人软卧包）</div>
+                            <div class="en-text">Take train D997 Beijing-Chengdu (Soft-sleeper train ticket in 4-bed cabin).</div>
+                            <div class="zh-text">北京丰台站候车，乘坐动卧前往成都（四人软卧包）。</div>
                         </div>
                     </div>
                 </div>
@@ -783,29 +841,29 @@
                     <div class="schedule-row">
                         <div class="time-col">08:47 (Arrives)</div>
                         <div class="text-col">
-                            <div class="en-text">Arrive at Chengdu & enjoy breakfast</div>
-                            <div class="zh-text">抵达成都并享用早餐</div>
+                            <div class="en-text">Arrive at Chengdu & enjoy breakfast.</div>
+                            <div class="zh-text">抵达成都并享用早餐。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">10:00 - 12:30</div>
                         <div class="text-col">
-                            <div class="en-text">Visit Renmin Square to see local life and explore Jinli Old Street</div>
-                            <div class="zh-text">成都市内游览：人民广场，锦里古街</div>
+                            <div class="en-text">Visit Renmin Square to see local life and explore Jinli Old Street.</div>
+                            <div class="zh-text">成都市内游览：人民广场，锦里古街。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">14:00 - 17:30</div>
                         <div class="text-col">
-                            <div class="en-text">Visit Chengdu Kuanzhai Alley</div>
-                            <div class="zh-text">成都市内游览：宽窄巷子</div>
+                            <div class="en-text">Visit Chengdu Kuanzhai Alley.</div>
+                            <div class="zh-text">成都市内游览：宽窄巷子。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">18:00 - 20:00</div>
                         <div class="text-col">
-                            <div class="en-text">Dinner at a local restaurant: Authentic Sichuan Hotpot</div>
-                            <div class="zh-text">晚餐：品尝正宗四川火锅</div>
+                            <div class="en-text">Dinner at a local restaurant: Authentic Sichuan Hotpot.</div>
+                            <div class="zh-text">晚餐：品尝正宗四川火锅。</div>
                         </div>
                     </div>
                 </div>
@@ -827,8 +885,8 @@
                     <div class="schedule-row">
                         <div class="time-col">08:00 - 11:30</div>
                         <div class="text-col">
-                            <div class="en-text">Sightseeing at the Chengdu Research Base of Giant Panda Breeding</div>
-                            <div class="zh-text">游览成都大熊猫繁育研究基地</div>
+                            <div class="en-text">Sightseeing at the Chengdu Research Base of Giant Panda Breeding.</div>
+                            <div class="zh-text">游览成都大熊猫繁育研究基地。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -841,8 +899,8 @@
                     <div class="schedule-row">
                         <div class="time-col">20:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text highlight-text-en">Enjoy the mesmerizing Sichuan Opera Face-Changing show</div>
-                            <div class="zh-text">欣赏震撼的川剧变脸表演</div>
+                            <div class="en-text highlight-text-en">Enjoy the mesmerizing Sichuan Opera Face-Changing show.</div>
+                            <div class="zh-text">欣赏震撼的川剧变脸表演。</div>
                         </div>
                     </div>
                 </div>
@@ -864,8 +922,8 @@
                     <div class="schedule-row">
                         <div class="time-col">07:30 - 11:30</div>
                         <div class="text-col">
-                            <div class="en-text">Transfer to Mt. Le and experience tea harvest at a local tea plant</div>
-                            <div class="zh-text">赴乐山茶园，体验传统采茶</div>
+                            <div class="en-text">Transfer to Mt. Le and experience tea harvest at a local tea plant.</div>
+                            <div class="zh-text">赴乐山茶园，体验传统采茶。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
@@ -894,15 +952,15 @@
                     <div class="schedule-row">
                         <div class="time-col">06:53 - 14:38</div>
                         <div class="text-col">
-                            <div class="en-text">Take high speed bullet train back to Beijing</div>
-                            <div class="zh-text">乘高铁返回北京，下午休整</div>
+                            <div class="en-text">Take high speed bullet train back to Beijing.</div>
+                            <div class="zh-text">乘高铁返回北京，下午休整。</div>
                         </div>
                     </div>
                     <div class="schedule-row">
                         <div class="time-col">18:00 - 21:00</div>
                         <div class="text-col">
-                            <div class="en-text highlight-text-en">SOLANA Shopping Center: Farewell Pizza Dinner & Party</div>
-                            <div class="zh-text">蓝色港湾购物中心：告别晚宴与披萨派对</div>
+                            <div class="en-text highlight-text-en">SOLANA Shopping Center: Farewell Pizza Dinner & Party.</div>
+                            <div class="zh-text">蓝色港湾购物中心：告别晚宴与披萨派对。</div>
                         </div>
                     </div>
                 </div>
